@@ -1,0 +1,24 @@
+<div>
+    <div class="header-modal-container">
+        <h6>Add Grocery Item</h6>
+        <ion-icon name="close-outline" size="small" (click)="closeModal()" color="danger"></ion-icon>
+    </div>
+    <div class="grocery-item-modal-container">
+        <form [formGroup]="addGroceryForm" (ngSubmit)=" submitNewGrocery()">
+            <ion-item>
+                <ion-label color="primary" position="stacked ">Grocery Name:</ion-label>
+                <ion-input color="primary" placeholder="Milk, eggs, etc." type="text" name="name" formControlName="name"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label color="primary" position="stacked ">Grocery Quantity:</ion-label>
+                <ion-input color="primary" placeholder="1, 2, 3, etc." type="number" name="quantity" formControlName="quantity" min="0"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label color="primary" position="stacked ">Grocery Price:</ion-label>
+                <ion-input color="primary" type="decimal" name="price " inputmode="decimal" formControlName="price">$</ion-input>
+            </ion-item>
+            <ion-button color="primary" type="submit" expand="full" shape="round ">Add Grocery Item</ion-button>
+        </form>
+        <h6 *ngIf="formErrors" class="error">There were errors in adding your grocery item</h6>
+    </div>
+</div>

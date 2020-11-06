@@ -1,0 +1,25 @@
+.info-container {
+    padding: 30px;
+    h1 {
+        text-decoration: underline;
+    }
+    .info-element {
+        * {
+            display: inline-block;
+            margin: 0;
+            margin-bottom: 5px;
+        }
+        & :first-child {
+            width: 125px;
+        }
+        &:nth-of-type(2) {
+            margin-bottom: 20px;
+        }
+    }
+    .info-block-element {
+        & :nth-child(2) {
+            max-width: 600px;
+            overflow: wrap;
+        }
+    }
+}

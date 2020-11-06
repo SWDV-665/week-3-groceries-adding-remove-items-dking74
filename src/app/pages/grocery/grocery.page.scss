@@ -1,0 +1,20 @@
+h6 {
+    font-weight: 400;
+}
+
+.grocery-container {
+    margin-top: 50px;
+    .quantity-container {
+        display: inline-block;
+        text-align: center;
+        * {
+            width: 30px;
+        }
+        span {
+            display: inline-block;
+        }
+        ion-icon {
+            cursor: pointer;
+        }
+    }
+}

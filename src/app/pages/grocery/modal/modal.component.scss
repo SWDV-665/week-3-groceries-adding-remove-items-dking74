@@ -1,0 +1,28 @@
+.header-modal-container {
+    padding: 10px;
+    margin-bottom: 30px;
+    h6 {
+        margin: 0;
+        float: left;
+    }
+    ion-icon {
+        float: right;
+        cursor: pointer;
+        border: 1px solid red;
+        &:hover {
+            background-color: rgba(255, 0, 0, 0.25);
+        }
+    }
+}
+
+.grocery-item-modal-container {
+    ion-item {
+        --background: inherit;
+    }
+    ion-item:last-of-type {
+        margin-bottom: 20px;
+    }
+    ion-button {
+        cursor: pointer;
+    }
+}
